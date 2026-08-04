@@ -1,0 +1,26 @@
+{
+  "metrics": {
+    "http_req_duration": {
+      "thresholds": {
+        "p(95)<500": { "ok": true },
+        "p(99)<1000": { "ok": true }
+      },
+      "values": { "avg": 214.7, "p(95)": 468.2, "p(99)": 812.4 }
+    },
+    "http_req_failed": {
+      "thresholds": {
+        "rate<0.01": { "ok": true }
+      },
+      "values": { "rate": 0.0021 }
+    },
+    "checkout_success": {
+      "thresholds": {
+        "rate>0.98": { "ok": false }
+      },
+      "values": { "rate": 0.9654 }
+    },
+    "http_reqs": {
+      "values": { "count": 12480, "rate": 104.0 }
+    }
+  }
+}
