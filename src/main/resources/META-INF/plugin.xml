@@ -1,0 +1,30 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>dev.gaphunter.k6companion</id>
+    <name>k6 Companion</name>
+    <vendor>Gap Hunter Labs</vendor>
+    <description><![CDATA[
+        <p>A Run Configuration for k6 load test scripts, plus a tool
+        window for k6's `--summary-export` JSON. A real paid competitor's
+        reviewers reported: "it doesn't respect Macros (despite allowing
+        macros to be used)... configuration errors saying the file does
+        not exist" -- this plugin explicitly expands path macros
+        (`PathMacroManager`) before ever touching the filesystem, for
+        both the script path and the k6 executable path.</p>
+        <p>Another cited complaint: "the terminal output for the
+        'animated progress bar' has been an issue for 2 years... makes
+        the plugin nearly unusable." This plugin renders process output
+        through the platform's own native `ConsoleView`
+        (`CommandLineState`), not a hand-rolled terminal emulator. No WSL
+        support in v1 -- not promising what the competitor doesn't
+        reliably deliver either.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <configurationType implementation="dev.gaphunter.k6companion.run.K6ConfigurationType"/>
+        <toolWindow id="k6 Summary" anchor="bottom"
+                    factoryClass="dev.gaphunter.k6companion.toolwindow.K6SummaryToolWindowFactory"/>
+    </extensions>
+</idea-plugin>
