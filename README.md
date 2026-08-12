@@ -58,7 +58,7 @@ script.js` yourself, then open the "k6 Summary" tool window and click
 ## Enterprise / Team Licensing
 
 Need enterprise features, custom rules, or team licensing? Contact us at
-**kennyj.diazm@gmail.com**.
+**gaphunterlabs@gmail.com**.
 
 ## Development
 
