@@ -4,6 +4,15 @@
 
 ## [Unreleased]
 
+## [0.1.1]
+
+### Fixed
+
+- Tool window content ("Open k6 --summary-export JSON..." button and
+  output area) was rendering flush against the tool window's own
+  border, with no margin — fixed with an 8px empty border on the root
+  panel.
+
 ## [0.1.0]
 
 ### Added
@@ -14,5 +23,6 @@
 - "k6 Summary" tool window: parses a local `--summary-export` JSON file
   and lists each threshold's pass/fail result.
 
-[Unreleased]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/GapHunterLabs/k6-companion/commits/0.1.0
