@@ -7,6 +7,7 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.wm.ToolWindow
 import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.content.ContentFactory
+import com.intellij.util.ui.JBUI
 import dev.gaphunter.k6companion.summary.K6SummaryJsonParseException
 import dev.gaphunter.k6companion.summary.K6SummaryReader
 import dev.gaphunter.k6companion.summary.MinimalJsonParser
@@ -37,6 +38,7 @@ private class K6SummaryPanel(private val project: Project) : JPanel(BorderLayout
     private val openButton = JButton("Open k6 --summary-export JSON...")
 
     init {
+        border = JBUI.Borders.empty(8)
         openButton.addActionListener { openAndParse() }
         add(openButton, BorderLayout.NORTH)
         add(JScrollPane(outputArea), BorderLayout.CENTER)
