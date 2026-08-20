@@ -25,6 +25,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <configurationType implementation="dev.gaphunter.k6companion.run.K6ConfigurationType"/>
         <toolWindow id="k6 Summary" anchor="bottom"
+                    icon="/icons/toolWindow.svg"
                     factoryClass="dev.gaphunter.k6companion.toolwindow.K6SummaryToolWindowFactory"/>
     </extensions>
 </idea-plugin>
