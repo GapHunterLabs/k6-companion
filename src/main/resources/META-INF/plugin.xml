@@ -23,6 +23,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="k6 Companion" displayType="BALLOON"/>
         <configurationType implementation="dev.gaphunter.k6companion.run.K6ConfigurationType"/>
         <toolWindow id="k6 Summary" anchor="bottom"
                     icon="/icons/toolWindow.svg"
