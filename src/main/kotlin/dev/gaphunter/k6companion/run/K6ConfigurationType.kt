@@ -9,8 +9,8 @@ import com.intellij.openapi.util.NotNullLazyValue
 /**
  * The k6 Run Configuration type/factory (combined via [SimpleConfigurationType],
  * since this plugin only ever needs one factory). First use of a real
- * `RunConfigurationType` in this workspace's catalog -- see
- * AUTOMATION_PLAYBOOK.md's note on this plugin being new SDK surface.
+ * `RunConfigurationType` in this workspace's catalog -- new SDK
+ * surface for this plugin.
  */
 class K6ConfigurationType : SimpleConfigurationType(
     "K6RunConfiguration",
