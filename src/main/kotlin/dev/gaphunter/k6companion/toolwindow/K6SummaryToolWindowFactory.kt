@@ -8,6 +8,7 @@ import com.intellij.openapi.wm.ToolWindow
 import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.content.ContentFactory
 import com.intellij.util.ui.JBUI
+import dev.gaphunter.k6companion.review.ReviewPrompt
 import dev.gaphunter.k6companion.summary.K6SummaryJsonParseException
 import dev.gaphunter.k6companion.summary.K6SummaryReader
 import dev.gaphunter.k6companion.summary.MinimalJsonParser
@@ -58,6 +59,8 @@ private class K6SummaryPanel(private val project: Project) : JPanel(BorderLayout
             val rendered = try {
                 val root = MinimalJsonParser.parse(text)
                 val outcomes = K6SummaryReader.extractThresholds(root)
+                // Real successful parse only -- never the catch branch below.
+                ReviewPrompt.recordHit(project)
                 renderOutcomes(outcomes)
             } catch (e: K6SummaryJsonParseException) {
                 "Failed to parse summary export: ${e.message}"
