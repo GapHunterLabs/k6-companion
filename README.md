@@ -16,10 +16,16 @@ complaints (5 independent reviewers over ~2 years):
   issues... right click a file/directory... would freeze phpstorm for a
   few seconds"* (2023-10-02)
 - *"the terminal output for the 'animated progress bar' has been an
-  issue for 2 years... makes the plugin nearly unusable"* (2023-09-20)
-- *"there's been no work on this plugin for 2 years, it may truly be
-  dead"* / *"it only supports debugging javascript"* despite advertising
-  TypeScript debugging support
+  issue for 2 years... [there have been] no updates on this project for
+  2 years, [this plugin] is dead"* (2023-09-20) -- **stale as of
+  2026-09-24**: the vendor has since shipped 5+ releases (2025-07
+  through 2026-07, most recently platform-2026.2 support), so "dead" no
+  longer holds. Kept here only as the origin of the progress-bar
+  complaint, which this plugin still fixes differently (see below).
+- *"it only supports debugging javascript"* despite advertising
+  TypeScript debugging support (2025-05) -- **re-verified 2026-09-24,
+  still current**: the same complaint is the plugin's most recent
+  review on file.
 
 ## Why built this way
 
