@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+## [0.1.4]
+
+### Fixed
+
+- Review/star CTA now links to this plugin's own Marketplace
+  reviews page instead of the vendor's generic plugin list.
+
 ## [0.1.3]
 
 ### Added
@@ -40,7 +47,8 @@
 - "k6 Summary" tool window: parses a local `--summary-export` JSON file
   and lists each threshold's pass/fail result.
 
-[Unreleased]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.3...HEAD
+[Unreleased]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.4...HEAD
+[0.1.4]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.3...0.1.4
 [0.1.3]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/GapHunterLabs/k6-companion/compare/0.1.0...0.1.1
